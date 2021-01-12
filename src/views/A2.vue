@@ -1,8 +1,8 @@
 <template>
   <div id="a2">
     <div style="margin-top: 50px">
-      {{count}}
-      <button @click="decrement">+</button>
+      {{ count }}
+      <button @click="decrement">-</button>
     </div>
   </div>
 </template>
@@ -11,7 +11,12 @@
 import store from "@/store";
 
 export default {
-name: "A2",
+  name: "A2",
+  data() {
+    return {
+      count: store.state.count
+    }
+  },
   methods: {
     decrement() {
       store.commit('decrement')

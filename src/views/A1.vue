@@ -12,6 +12,11 @@ import store from "@/store";
 
 export default {
   name: "A1",
+  data() {
+    return {
+      count: store.state.count
+    }
+  },
   methods: {
     increment() {
       store.commit('increment')
