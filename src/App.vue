@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <button @click="toA">跳转到A页面</button>
-    <button @click="toB">跳转到B页面</button>
+    <a
+        href="http://localhost:8501/?AxMxSessionToken=abcdefghigklmn"
+        target="_blank"
+    >跳转到tangshan管理后台</a
+    >
+    <!--<button @click="toA">跳转到A页面</button>-->
+    <!--<button @click="toB">跳转到B页面</button>-->
     <router-view></router-view>
-
-
   </div>
 </template>
 
